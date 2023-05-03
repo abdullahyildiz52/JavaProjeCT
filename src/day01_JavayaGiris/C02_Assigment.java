@@ -8,6 +8,7 @@ public class C02_Assigment {
 
         sayi=20;
 
+
     // java değer atanmadan varble oluşturmaya izin verir
         //ama değer atanmadan cte verir.
         System.out.println(sayi);   //20
