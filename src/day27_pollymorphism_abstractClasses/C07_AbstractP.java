@@ -16,7 +16,7 @@ public abstract class C07_AbstractP extends C06_AbstractGP{
     }void method4(){
         System.out.println("parent class concrete method1");
     }
-    abstract void method5();
+    protected abstract void method5();
     void method6(){
         System.out.println("parent class concrete method6");
     }
