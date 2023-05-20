@@ -49,7 +49,7 @@ public class C04_Iterator {
 
         Iterator itr = sayilar.iterator();
 
-        itr.next();
+       /* itr.next();
         itr.remove();
         itr.next();
         itr.remove();
@@ -57,6 +57,12 @@ public class C04_Iterator {
         itr.remove();
         itr.next();
         itr.remove();
+
+        */
+        while (itr.hasNext()){
+            itr.next();
+            itr.remove();
+        }
 
         System.out.println(sayilar); // []
 
