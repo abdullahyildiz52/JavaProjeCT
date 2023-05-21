@@ -26,11 +26,24 @@ public class C03_Queue {
 
         System.out.println(yemekSirasi); // [Muhammed, Abdullah, Sevda, Veysel, Aysegul]
         System.out.println(yemekSirasi.poll()); // Muhammed
-        // video da 1:37:37
+        System.out.println("poll den sonra :" + yemekSirasi); // poll den sonra :[Abdullah, Sevda, Veysel, Aysegul]
 
+        Queue<String> liste2=new LinkedList<>();
+        // liste2.remove(); // NoSuchElementException
+        System.out.println(liste2.poll());// null
 
+        yemekSirasi.offer("Firdevs");
+        System.out.println(yemekSirasi);// [Abdullah, Sevda, Veysel, Aysegul, Firdevs]
+        // eger kapasite sinirlamasi yoksa add() ile ayni islevi yapar
+        System.out.println(yemekSirasi.peek()); //Abdullah
+        System.out.println(yemekSirasi);// [Abdullah, Sevda, Veysel, Aysegul, Firdevs]
+        System.out.println(liste2.peek()); // null
 
+        System.out.println(yemekSirasi.element());// Abdullah
+        System.out.println(yemekSirasi); //[Abdullah, Sevda, Veysel, Aysegul, Firdevs]
 
+        // System.out.println(liste2.element()); // NoSuchElementException
+        // bastaki elementi silmeden bize dondurur, bos liste olursa exception olusur
     }
 
 }
